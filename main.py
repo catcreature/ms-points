@@ -15,6 +15,9 @@ def from_wiki():
     return sentences
 
 def main():
+    if number_of_searches()==0:
+        print("You have earned the maximum points possible.")
+        return
     sentence = from_wiki()
     for i in range(number_of_searches()):
         print(f"searching for the {i+1}")
